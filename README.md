@@ -4,7 +4,7 @@
 </div>
 
 ## Introduction
-This repository is an official implementation of StreamMapNet.
+This repository is an official implementation of StreamMapNet. The code is releasing soon.
 
 ## Getting Started
 ### 1. Environment
@@ -90,7 +90,6 @@ python tools/benchmark.py ${CONFIG} ${CEHCKPOINT}
 | $60\times 30\ m$ | | | | |||
 | $100\times 50\ m$ | | | | |||
 
-
 ### Results on NuScenes oldsplit
 | Range | $\mathrm{AP}_{ped}$ | $\mathrm{AP}_{div}$| $\mathrm{AP}_{bound}$ | mAP | Config | Checkpoint |
 | :---: |   :---:  |  :---:  | :---:      |:---:|:---:   | :---:      |
@@ -98,7 +97,4 @@ python tools/benchmark.py ${CONFIG} ${CEHCKPOINT}
 | $100\times 50\ m$ | | | | |||
 
 ## Citation
-If you find our paper or codebase useful in your research, please give us a star and cite our paper:
-```
-
-```
+If you find our paper or codebase useful in your research, please give us a star and cite our paper.

@@ -1,10 +1,12 @@
 <div align="center">
 <h1>StreamMapNet</h1>
 <h3>[WACV 2024] Streaming Mapping Network for Vectorized Online HD Map Construction</h3>
+  
+<img src="./resources/pipeline_newnew.png" width="950px">
 </div>
 
 ## Introduction
-This repository is an official implementation of StreamMapNet. The code is releasing soon.
+This repository is an official implementation of StreamMapNet.
 
 ## Getting Started
 ### 1. Environment
@@ -79,22 +81,21 @@ python tools/benchmark.py ${CONFIG} ${CEHCKPOINT}
 ## Results
 
 ### Results on Argoverse2 newsplit
-| Range | $\mathrm{AP}_{ped}$ | $\mathrm{AP}_{div}$| $\mathrm{AP}_{bound}$ | mAP | Config | Checkpoint |
-| :---: |   :---:  |  :---:  | :---:      |:---:|:---:   | :---:      |
-| $60\times 30\ m$ | | | | |||
-| $100\times 50\ m$ | | | | |||
+| Range | $\mathrm{AP}_{ped}$ | $\mathrm{AP}_{div}$| $\mathrm{AP}_{bound}$ | $\mathrm{AP}$ | Config | Epoch | Checkpoint |
+| :---: |   :---:  |  :---:  | :---:   |:---:|:---: |:---:  | :---:   |
+| $60\times 30\ m$ | 57.9 | 55.7| 61.3| 58.3| [Config](./plugin/configs/av2_newsplit_608_60x30_30e.py) | 30 | |
+| $100\times 50\ m$ |60.0 | 45.9 | 48.9 | 51.6 | [Config](./plugin/configs/av2_newsplit_608_100x0_30e.py5) |30 ||
 
 ### Results on NuScenes newsplit
-| Range | $\mathrm{AP}_{ped}$ | $\mathrm{AP}_{div}$| $\mathrm{AP}_{bound}$ | mAP | Config | Checkpoint |
-| :---: |   :---:  |  :---:  | :---:      |:---:|:---:   | :---:      |
-| $60\times 30\ m$ | | | | |||
-| $100\times 50\ m$ | | | | |||
+| Range | $\mathrm{AP}_{ped}$ | $\mathrm{AP}_{div}$| $\mathrm{AP}_{bound}$ | $\mathrm{AP}$ | Config | Epoch | Checkpoint |
+| :---: |   :---:  |  :---:  | :---:      |:---:|:---: |:---:   | :---:      |
+| $60\times 30\ m$ | 32.2 | 29.3 | 40.8 | 34.1 | [Config](./plugin/configs/nusc_newsplit_480_60x30_24e.py) | 24||
+| $100\times 50\ m$ | 25.6 | 17.4 | 24.3 | 22.4 | [Config](./plugin/configs/nusc_newsplit_480_100x50_24e.py)| 24 ||
 
 ### Results on NuScenes oldsplit
-| Range | $\mathrm{AP}_{ped}$ | $\mathrm{AP}_{div}$| $\mathrm{AP}_{bound}$ | mAP | Config | Checkpoint |
-| :---: |   :---:  |  :---:  | :---:      |:---:|:---:   | :---:      |
-| $60\times 30\ m$ | | | | |||
-| $100\times 50\ m$ | | | | |||
+| Range | $\mathrm{AP}_{ped}$ | $\mathrm{AP}_{div}$| $\mathrm{AP}_{bound}$ | $\mathrm{AP}$ | Config | Epoch | Checkpoint |
+| :---: |   :---:  |  :---:  | :---:      |:---:|:---:|:---:   | :---:      |
+| $60\times 30\ m$ | 61.7| 66.3 | 62.1 | 63.4 | [Config](./plugin/configs/nusc_baseline_480_60x30_30e.py) | 30||
 
 ## Citation
 If you find our paper or codebase useful in your research, please give us a star and cite our paper.

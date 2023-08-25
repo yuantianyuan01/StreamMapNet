@@ -127,7 +127,7 @@ mmdet3d/.mim
 # demo
 demo/
 *.jpg
-# *.png
+*.png
 *.obj
 *.ply
 *.zip

@@ -1,8 +1,11 @@
 <div align="center">
-<h1>StreamMapNet</h1>
-<h3>[WACV 2024] Streaming Mapping Network for Vectorized Online HD Map Construction</h3>
+  <h1>StreamMapNet</h1>
   
-<img src="./resources/pipeline_newnew.png" width="950px">
+  <h3>[WACV 2024] StreamMapNet: Streaming Mapping Network for Vectorized Online HD Map Construction </h3>
+  
+  [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2308.12570)
+  
+  <img src="./resources/pipeline_newnew.png" width="950px">
 </div>
 
 ## Introduction
